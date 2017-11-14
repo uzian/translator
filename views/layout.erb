@@ -160,6 +160,10 @@
       <form action="/" method="get">
         <input type="submit" value="Clear" />
       </form>
+       
+      <form id="reloadform" action="/reload" method="post">
+        <input type="submit" id="reload" value="Reload" / onclick="return confirm('Reloading means that all unsaved changes will be lost. Are you sure you want to proceed with this operation? ')">
+      </form>
 
       <div id="save-on-top-container" class="pull-right"></div>
     </div>

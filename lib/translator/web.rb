@@ -50,6 +50,11 @@ module Translator
         res.redirect "/?#{url}"
       end
 
+      on post, 'reload' do
+        app.reload
+        res.redirect "/?"
+      end      
+
       on get, 'debug' do
         res.write partial('debug.html',
                           translations: app.store.translations.values)

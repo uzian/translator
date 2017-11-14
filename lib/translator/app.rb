@@ -61,6 +61,15 @@ module Translator
       end
     end
 
+    def reload
+      @store=Store.new
+      $stdout.puts " * Reloading translations"
+      load_translations
+
+      $stdout.puts ' * Creating missing translations'
+      store.create_missing_keys      
+    end
+
     private
 
     # Enables Translator to deal with inputs that reference a file list or a
