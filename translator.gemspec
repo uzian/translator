@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 Gem::Specification.new do |s|
   s.name     = 'translator'
-  s.version  = '1.3.1'
-  s.date     = '2015-10-07'
+  s.version  = '1.3.2'
+  s.date     = '2018-01-14'
   s.summary  = 'Translator'
   s.email    = 'wolfgang.teuber@sage.com'
   s.homepage = 'http://github.com/Sage/translator'
